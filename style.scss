@@ -1,0 +1,39 @@
+// Variables
+$primary-color: #ff6700; 
+$secondary-color: #333;  
+$accent-color: #fff;    
+$font-size-large: 1.5rem;
+$font-size-small: 0.875rem;
+
+
+.movie-card {
+  background-color: color.adjust($primary-color, $lightness: -10%);
+  color: $accent-color;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+
+  &:hover {
+    background-color: color.adjust($primary-color, $lightness: -20%);
+  }
+
+  .movie-title {
+    font-size: $font-size-large;
+    color: $secondary-color;
+  }
+
+  .rating {
+    font-size: $font-size-small;
+    color: color.adjust($secondary-color, $lightness: 20%);
+  }
+}
+
+
+$stars: 5;
+
+@for $i from 1 through $stars {
+  .star-#{$i} {
+    width: 10px * $i;
+    color: color.adjust($primary-color, $lightness: 10% * $i);
+  }
+}

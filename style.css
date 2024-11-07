@@ -1,0 +1,45 @@
+.movie-card {
+  background-color: #ff6700;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+.movie-card:hover {
+  background-color: rgb(204, 82.4, 0);
+}
+.movie-card .movie-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+.movie-card .rating {
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.star-1 {
+  width: 10px;
+  color: rgb(255, 133.4, 51);
+}
+
+.star-2 {
+  width: 20px;
+  color: rgb(255, 163.8, 102);
+}
+
+.star-3 {
+  width: 30px;
+  color: rgb(255, 194.2, 153);
+}
+
+.star-4 {
+  width: 40px;
+  color: rgb(255, 224.6, 204);
+}
+
+.star-5 {
+  width: 50px;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
